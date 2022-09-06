@@ -19,11 +19,11 @@ const stopwatch = function() {
         seconds ++;
         msecs = 0;
     }
-    if (seconds % 60 === 0) {
+    if (seconds % 60 === 0 && seconds !== 0) {
         minutes ++;
         seconds = 0;
     }
-    if ( minutes % 60 === 0) {
+    if ( minutes % 60 === 0 && minutes !== 0) {
         hours ++;
         minutes = 0;
     }
